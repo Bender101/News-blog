@@ -1,4 +1,3 @@
-import cls from "./LangSwitcher.module.scss";
 import React, { FC } from "react";
 import { classNames } from "shared/lib/classNames/classNames";
 import { useTranslation } from "react-i18next";
@@ -20,7 +19,7 @@ export const LangSwitcher: FC<LangSwitcherProps> = ({ className }) => {
 
   return (
     <Button
-      className={classNames(cls.langSwitcher, {}, [className])}
+      className={classNames('', {}, [className])}
       theme={ThemeButton.CLEAR}
       onClick={changeLang}
     >
