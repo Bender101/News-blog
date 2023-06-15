@@ -3,6 +3,6 @@
   "test_case": "Test case",
   "main": "Main",
   "about": "About",
-  "lang": "English"
-
+  "lang": "English",
+  "not_found": "Page not found"
 }
