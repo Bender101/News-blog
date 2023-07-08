@@ -36,12 +36,12 @@ export const Button: FC<ButtonProps> = ({
 
   return (
     <button
+      {...otherProps}
       className={classNames(cls.button, mods, [
         className,
         cls[theme],
         cls[size],
       ])}
-      {...otherProps}
     >
       {children}
     </button>
