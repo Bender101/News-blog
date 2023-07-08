@@ -22,15 +22,14 @@ jobs:
 
       - name: Install modules
         run: npm install
-
       - name: Prod build
         run: npm run build:prod
-
       - name: lint ts
         run: npm run lint:ts
-
+        if: always()
       - name: lint css
         run: npm run lint:scss
-
+        if: always()
       - name: Unit testing
         run: npm run test:unit
+        if: always()
