@@ -4,5 +4,6 @@
   "main": "Main",
   "about": "About",
   "lang": "English",
-  "not_found": "Page not found"
+  "not_found": "Page not found",
+  "sign_in": "Sign In"
 }
