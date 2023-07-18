@@ -16,6 +16,9 @@ export default {
   // cacheDirectory: "C:\\Users\\Sergey\\AppData\\Local\\Temp\\jest",
 
   // Automatically clear mock calls, instances and results before every test
+  globals: {
+    __IS_DEV__: true,
+  },
   clearMocks: true,
   coveragePathIgnorePatterns: ["\\\\node_modules\\\\"],
   moduleDirectories: ["node_modules"],
@@ -26,8 +29,8 @@ export default {
   testMatch: ["<rootDir>src/**/*(*.)@(spec|test).[tj]s?(x)"],
 
   moduleNameMapper: {
-    '\\.(s?css)$': 'identity-obj-proxy',
-    '\\.svg': path.resolve(__dirname, 'jestEmptyComponent.tsx')
+    "\\.(s?css)$": "identity-obj-proxy",
+    "\\.svg": path.resolve(__dirname, "jestEmptyComponent.tsx"),
   },
 
   // Indicates whether the coverage information should be collected while executing the test

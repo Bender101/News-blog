@@ -8,7 +8,6 @@ interface PageLoaderProps {
 }
 
 export const PageLoader: FC<PageLoaderProps> = ({ className }) => {
-    console.log('asdasd')
   return (
     <div className={classNames(cls.pageLoader, {}, [className])}>
       <Loader />
