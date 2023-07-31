@@ -4,7 +4,7 @@ import {ThemeDecorator} from "shared/config/storybook/ThemeDecorator/ThemeDecora
 import {Theme} from "app/providers/ThemeProvider";
 
 const meta: Meta<typeof Button> = {
-  title: "Example/Button",
+  title: "shared/Button",
   component: Button,
   tags: ["autodocs"],
 };
