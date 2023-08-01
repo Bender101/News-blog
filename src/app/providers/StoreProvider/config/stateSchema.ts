@@ -5,4 +5,4 @@ export interface StateSchema {
   counter: CounterSchema;
   user: UserSchema
 }
-asdasdsgsd
+asdasdsg
