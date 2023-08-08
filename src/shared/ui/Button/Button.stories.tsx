@@ -1,7 +1,7 @@
-import type {Meta, StoryObj} from "@storybook/react";
-import {Button, ButtonSize, ButtonTheme} from "./Button";
-import {ThemeDecorator} from "shared/config/storybook/ThemeDecorator/ThemeDecorator";
-import {Theme} from "app/providers/ThemeProvider";
+import type { Meta, StoryObj } from "@storybook/react";
+import { Button, ButtonSize, ButtonTheme } from "./Button";
+import { ThemeDecorator } from "shared/config/storybook/ThemeDecorator/ThemeDecorator";
+import { Theme } from "app/providers/ThemeProvider";
 
 const meta: Meta<typeof Button> = {
   title: "shared/Button",
@@ -36,7 +36,7 @@ export const OutlineM: Story = {
   args: {
     children: "Text",
     theme: ButtonTheme.OUTLINE,
-    size: ButtonSize.M
+    size: ButtonSize.M,
   },
 };
 
@@ -44,7 +44,7 @@ export const OutlineL: Story = {
   args: {
     children: "Text",
     theme: ButtonTheme.OUTLINE,
-    size: ButtonSize.L
+    size: ButtonSize.L,
   },
 };
 
@@ -52,7 +52,7 @@ export const OutlineXL: Story = {
   args: {
     children: "Text",
     theme: ButtonTheme.OUTLINE,
-    size: ButtonSize.XL
+    size: ButtonSize.XL,
   },
 };
 
@@ -83,7 +83,7 @@ export const SquareM: Story = {
     children: ">",
     theme: ButtonTheme.BACKGROUND_INVERTED,
     square: true,
-    size: ButtonSize.M
+    size: ButtonSize.M,
   },
 };
 
@@ -92,7 +92,7 @@ export const SquareL: Story = {
     children: ">",
     theme: ButtonTheme.BACKGROUND_INVERTED,
     square: true,
-    size: ButtonSize.L
+    size: ButtonSize.L,
   },
 };
 
@@ -101,6 +101,16 @@ export const SquareXL: Story = {
     children: ">",
     theme: ButtonTheme.BACKGROUND_INVERTED,
     square: true,
-    size: ButtonSize.XL
+    size: ButtonSize.XL,
+  },
+};
+
+export const Disabled: Story = {
+  args: {
+    children: ">",
+    theme: ButtonTheme.OUTLINE,
+    square: true,
+    disabled: true,
+    size: ButtonSize.XL,
   },
 };

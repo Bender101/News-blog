@@ -29,6 +29,11 @@
       "id": 6,
       "title": "json-server32",
       "author": "typicode"
+    },
+    {
+      "username": "admin",
+      "password": "123",
+      "id": 7
     }
   ],
   "comments": [

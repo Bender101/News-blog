@@ -6,6 +6,10 @@
   "lang": "English",
   "not_found": "Page not found",
   "sign_in": "Sign In",
+  "logout": "Logout",
   "username": "Username",
-  "password": "Password"
+  "password": "Password",
+  "auth_error": "Invalid login or password",
+  "auth_form": "Auth Form"
+
 }

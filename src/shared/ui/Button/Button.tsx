@@ -4,7 +4,7 @@ import { classNames } from "shared/lib/classNames/classNames";
 
 export enum ButtonTheme {
   CLEAR = "clear",
-  CLEAR_INVERTED = 'clearInverted',
+  CLEAR_INVERTED = "clearInverted",
   OUTLINE = "outline",
   BACKGROUND = "background",
   BACKGROUND_INVERTED = "background_inverted",
@@ -21,6 +21,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   theme?: ButtonTheme;
   size?: ButtonSize;
   square?: boolean;
+  disabled?: boolean;
 }
 
 export const Button: FC<ButtonProps> = ({
@@ -29,10 +30,12 @@ export const Button: FC<ButtonProps> = ({
   children,
   size = ButtonSize.M,
   square,
+  disabled,
   ...otherProps
 }) => {
   const mods: Record<string, boolean> = {
     [cls.square]: square,
+    [cls.disabled]: disabled,
   };
 
   return (
