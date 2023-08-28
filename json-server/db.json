@@ -1,51 +1,51 @@
 {
   "posts": [
     {
-      "id": 1,
+      "id": "1",
       "title": "json-server12",
       "author": "typicode"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "json-server2",
       "author": "typicode"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "json-server1",
       "author": "typicode"
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "json-server223",
       "author": "typicode"
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "json-server1231",
       "author": "typicode"
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "json-server32",
       "author": "typicode"
     },
     {
       "username": "admin",
       "password": "123",
-      "id": 7
+      "id": "7"
     }
   ],
   "comments": [
     {
-      "id": 1,
+      "id": "1",
       "body": "some comment",
       "postId": 1
     }
   ],
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "username": "admin",
       "password": "123"
     }
