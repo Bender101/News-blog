@@ -2,45 +2,20 @@
   "posts": [
     {
       "id": "1",
-      "title": "json-server12",
-      "author": "typicode"
+      "title": "json-server",
+      "userId": "1"
     },
     {
       "id": "2",
-      "title": "json-server2",
-      "author": "typicode"
-    },
-    {
-      "id": "3",
-      "title": "json-server1",
-      "author": "typicode"
-    },
-    {
-      "id": "4",
-      "title": "json-server223",
-      "author": "typicode"
-    },
-    {
-      "id": "5",
-      "title": "json-server1231",
-      "author": "typicode"
-    },
-    {
-      "id": "6",
-      "title": "json-server32",
-      "author": "typicode"
-    },
-    {
-      "username": "admin",
-      "password": "123",
-      "id": "7"
+      "title": "json-server",
+      "userId": "2"
     }
   ],
   "comments": [
     {
       "id": "1",
       "body": "some comment",
-      "postId": 1
+      "postId": "1"
     }
   ],
   "users": [
@@ -51,6 +26,13 @@
     }
   ],
   "profile": {
-    "name": "typicode"
+    "first": "Sergey",
+    "lastname": "Asafyev",
+    "age": 29,
+    "currency": "RUB",
+    "country": "Russia",
+    "city": "Moscow",
+    "username": "admin",
+    "avatar": "https://pic.rutubelist.ru/user/3b/27/3b2758ad5492a76b578f7ee072e4e894.jpg"
   }
 }

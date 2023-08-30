@@ -10,6 +10,6 @@
   "username": "Username",
   "password": "Password",
   "auth_error": "Invalid login or password",
-  "auth_form": "Auth Form"
-
+  "auth_form": "Auth Form",
+  "profile_page": "Profile"
 }
