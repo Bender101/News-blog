@@ -1,22 +1,29 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true
+    es2021: true,
   },
-  extends: ["eslint:recommended", "plugin:react/recommended", "plugin:storybook/recommended"],
+  extends: [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:storybook/recommended",
+  ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaFeatures: {
-      jsx: true
+      jsx: true,
     },
     ecmaVersion: "latest",
-    sourceType: "module"
+    sourceType: "module",
   },
   plugins: ["react", "@typescript-eslint", "react-hooks"],
   rules: {
-    "react/jsx-filename-extension": [2, {
-      extensions: [".js", ".jsx", ".tsx"]
-    }],
+    "react/jsx-filename-extension": [
+      2,
+      {
+        extensions: [".js", ".jsx", ".tsx"],
+      },
+    ],
     "import/no-unresolved": "off",
     "import/prefer-default-export": "off",
     "@typescript-eslint/no-unused-vars": "error",
@@ -32,9 +39,9 @@ module.exports = {
     "no-undef": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "error",
-    "no-param-reassign": "off"
+    "no-param-reassign": "off",
   },
   globals: {
-    __IS_DEV__: true
-  }
+    __IS_DEV__: true,
+  },
 };

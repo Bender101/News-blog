@@ -18,7 +18,7 @@ export const Light: Story = {
     ThemeDecorator(Theme.LIGHT),
     StoreDecorator({
       user: {
-        authData: {},
+        authData: { id: '1', username: "admin" },
       },
     }),
   ],
@@ -30,7 +30,7 @@ export const Dark: Story = {
     ThemeDecorator(Theme.DARK),
     StoreDecorator({
       user: {
-        authData: {},
+        authData: { id: '1', username: "admin" },
       },
     }),
   ],

@@ -1,4 +1,3 @@
-import { DeepPartial } from "redux";
 import { StateSchema } from "app/providers/StoreProvider";
 import { getCounter } from "./getCounter";
 
@@ -8,4 +7,3 @@ describe("getCounter", () => {
     expect(getCounter(state as StateSchema)).toEqual({ value: 10 });
   });
 });
-
