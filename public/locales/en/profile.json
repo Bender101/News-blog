@@ -1,6 +1,16 @@
 {
   "profile": "Profile",
   "edit": "Edit",
+  "cancel": "Cancel",
+  "save": "Save",
   "first_name": "First name",
-  "last_name": "Last name"
+  "last_name": "Last name",
+  "age": "Your age",
+  "city": "City",
+  "country": "Enter country",
+  "currency": "Enter currency",
+  "user_name": "Enter user name",
+  "url_avatar": "Enter url avatar",
+  "error_title": "An error occurred while loading a profile",
+  "error_body": "Try refreshing the page"
 }
