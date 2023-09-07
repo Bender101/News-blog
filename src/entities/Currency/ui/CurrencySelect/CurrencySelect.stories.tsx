@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { CurrencySelect } from "entities/Currency/ui/CurrencySelect/CurrencySelect";
 
 const meta: Meta<typeof CurrencySelect> = {
-  title: "pages/CurrencySelect",
+  title: "shared/CurrencySelect",
   component: CurrencySelect,
   tags: ["autodocs"],
 };
@@ -10,6 +10,6 @@ const meta: Meta<typeof CurrencySelect> = {
 export default meta;
 type Story = StoryObj<typeof CurrencySelect>;
 
-export const primary: Story = {
+export const Primary: Story = {
   args: {},
 };

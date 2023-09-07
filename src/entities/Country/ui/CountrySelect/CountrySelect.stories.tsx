@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { CountrySelect } from "entities/Country/ui/CountrySelect/CountrySelect";
 
 const meta: Meta<typeof CountrySelect> = {
-  title: "pages/CurrencySelect",
+  title: "shared/CountrySelect",
   component: CountrySelect,
   tags: ["autodocs"],
 };
@@ -10,6 +10,6 @@ const meta: Meta<typeof CountrySelect> = {
 export default meta;
 type Story = StoryObj<typeof CountrySelect>;
 
-export const primary: Story = {
+export const Primary: Story = {
   args: {},
 };
