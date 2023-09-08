@@ -12,5 +12,10 @@
   "user_name": "Enter user name",
   "url_avatar": "Enter url avatar",
   "error_title": "An error occurred while loading a profile",
-  "error_body": "Try refreshing the page"
+  "error_body": "Try refreshing the page",
+  "incorrect_user_data": "Incorrect user data",
+  "incorrect_age": "Incorrect age",
+  "incorrect_country": "Incorrect country",
+  "incorrect_server_error": "Server error",
+  "no_data": "Нет данных"
 }

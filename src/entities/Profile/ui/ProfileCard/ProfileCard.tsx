@@ -5,10 +5,8 @@ import { Input } from "shared/ui/Input/Input";
 import cls from "./ProfileCard.module.scss";
 import { Profile } from "entities/Profile/model/types/profile";
 import { Loader } from "shared/ui/Loader/Loader";
-import { Currency } from "shared/const/common";
-import { Country } from "shared/const/common";
-import { CurrencySelect } from "entities/Currency";
-import { CountrySelect } from "entities/Country";
+import {Currency, CurrencySelect} from "entities/Currency";
+import {Country, CountrySelect } from "entities/Country";
 import { Avatar } from "shared/ui/Avatar/Avatar";
 
 interface ProfileCardProps {
