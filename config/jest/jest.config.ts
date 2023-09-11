@@ -18,7 +18,8 @@ export default {
   // Automatically clear mock calls, instances and results before every test
   globals: {
     __IS_DEV__: true,
-    __API__: '',
+    __API__: "",
+    __PROJECT__: "jest",
   },
   clearMocks: true,
   coveragePathIgnorePatterns: ["\\\\node_modules\\\\"],
@@ -32,7 +33,7 @@ export default {
   moduleNameMapper: {
     "\\.(s?css)$": "identity-obj-proxy",
     "\\.svg": path.resolve(__dirname, "jestEmptyComponent.tsx"),
-    '^axios$': require.resolve('axios'),
+    "^axios$": require.resolve("axios"),
   },
 
   // Indicates whether the coverage information should be collected while executing the test
