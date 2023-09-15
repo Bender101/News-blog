@@ -11,5 +11,6 @@
   "password": "Пароль",
   "auth_error": "Неверный логин или пароль",
   "auth_form": "Форма авторизации",
-  "profile_page": "Профиль"
+  "profile_page": "Профиль",
+  "articles_page": "Статьи"
 }

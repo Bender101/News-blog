@@ -3,6 +3,7 @@ import { SVGProps, VFC } from "react";
 import AboutIcon from "../../../shared/assets/icons/About.svg";
 import MainIcon from "../../../shared/assets/icons/Home.svg";
 import ProfileIcon from "../../../shared/assets/icons/profile-20-20.svg";
+import ArticleIcon from "../../../shared/assets/icons/article-20-20.svg";
 
 export interface SidebarItemType {
   path: string;
@@ -28,4 +29,11 @@ export const SidebarItemsList: SidebarItemType[] = [
     text: "profile_page",
     authOnly: true,
   },
+  {
+    path: RoutePath.articles,
+    Icon: ArticleIcon,
+    text: "articles_page",
+    authOnly: true,
+  },
+
 ];

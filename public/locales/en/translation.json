@@ -11,5 +11,6 @@
   "password": "Password",
   "auth_error": "Invalid login or password",
   "auth_form": "Auth Form",
-  "profile_page": "Profile"
+  "profile_page": "Profile",
+  "articles_page": "Articles"
 }
