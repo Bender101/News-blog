@@ -2,8 +2,8 @@ import { classNames } from "shared/lib/classNames/classNames";
 import { useTranslation } from "react-i18next";
 import { memo } from "react";
 import cls from "./ArticleDetailsPage.module.scss";
-import { ArticleDetails } from "entities/Articles/ui/ArticleDetails/ArticleDetails";
 import { useParams } from "react-router-dom";
+import { ArticleDetails } from "entities/Article";
 
 interface ArticleDetailsPageProps {
   className?: string;
@@ -12,12 +12,12 @@ interface ArticleDetailsPageProps {
 const ArticleDetailsPage = (props: ArticleDetailsPageProps) => {
   const { className } = props;
   const { id } = useParams();
-  const { t } = useTranslation();
+  const { t } = useTranslation('article-details');
 
   if (!id) {
     return (
         <div className={classNames(cls.ArticleDetailsPage, {}, [className])}>
-          {t('Статья не найдена')}
+          {t('article_loading_error')}
         </div>
     );
   }

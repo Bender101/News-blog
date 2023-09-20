@@ -15,25 +15,25 @@ export enum ArticleType {
   ECONOMICS = "ECONOMICS",
 }
 
-export interface ArticleBlockImage extends ArticleBlockBase {
+export interface ArticleImageBlock extends ArticleBlockBase {
   type: ArticleBlockType.IMAGE;
   src: string;
   title: string;
 }
-export interface ArticleBlockCode extends ArticleBlockBase {
+export interface ArticleCodeBlock extends ArticleBlockBase {
   type: ArticleBlockType.CODE;
   code: string;
 }
-export interface ArticleBlockText extends ArticleBlockBase {
+export interface ArticleTextBlock extends ArticleBlockBase {
   type: ArticleBlockType.TEXT;
   title: string;
-  paragraphs: string;
+  paragraphs: string[];
 }
 
 export type ArticleBlock =
-  | ArticleBlockImage
-  | ArticleBlockCode
-  | ArticleBlockText;
+  | ArticleImageBlock
+  | ArticleCodeBlock
+  | ArticleTextBlock;
 
 export interface Article {
   id: string;
