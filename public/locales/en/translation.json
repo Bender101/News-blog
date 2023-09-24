@@ -12,5 +12,7 @@
   "auth_error": "Invalid login or password",
   "auth_form": "Auth Form",
   "profile_page": "Profile",
-  "articles_page": "Articles"
+  "articles_page": "Articles",
+  "comments": "Comments",
+  "no_comments": "No comments"
 }

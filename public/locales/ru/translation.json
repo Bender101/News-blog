@@ -12,5 +12,7 @@
   "auth_error": "Неверный логин или пароль",
   "auth_form": "Форма авторизации",
   "profile_page": "Профиль",
-  "articles_page": "Статьи"
+  "articles_page": "Статьи",
+  "comments": "Коментарии",
+  "no_comments": "Комментарии отсутствуют"
 }
