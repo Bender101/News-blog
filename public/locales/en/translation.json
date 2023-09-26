@@ -14,5 +14,7 @@
   "profile_page": "Profile",
   "articles_page": "Articles",
   "comments": "Comments",
-  "no_comments": "No comments"
+  "no_comments": "No comments",
+  "enter_text": "Enter text",
+  "send": "Send"
 }

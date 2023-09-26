@@ -16,13 +16,15 @@ import {
   ReducersList,
 } from "shared/lib/components/DynamicModuleLoader";
 import { useAppDispatch } from "shared/lib/hooks/useAppDispatch/useAppDispatch";
-import { useCallback, useEffect } from "react";
+import { useCallback } from "react";
 import { useSelector } from "react-redux";
 import { ProfilePageHeader } from "./ProfilePageHeader/ProfilePageHeader";
 import { Currency } from "entities/Currency";
 import { Country } from "entities/Country";
 import { Text, TextTheme } from "shared/ui/Text/Text";
 import { useTranslation } from "react-i18next";
+import { useParams } from "react-router-dom";
+import { useInitialEffect } from "shared/lib/hooks/useInitialEffect/useInitialEffect";
 
 const reducers: ReducersList = {
   profile: profileReducer,
@@ -34,6 +36,7 @@ interface ProfilePageProps {
 
 const ProfilePage = ({ className }: ProfilePageProps) => {
   const { t } = useTranslation("profile");
+  const { id } = useParams<{ id: string }>();
   const dispatch = useAppDispatch();
   const formData = useSelector(getProfileForm);
   const isLoading = useSelector(getProfileIsLoading);
@@ -49,11 +52,10 @@ const ProfilePage = ({ className }: ProfilePageProps) => {
     [ValidateProfileError.NO_DATA]: t("no_data"),
   };
 
-  useEffect(() => {
-    if (__PROJECT__ !== "storybook") {
-      dispatch(fetchProfileData());
-    }
-  }, [dispatch]);
+  useInitialEffect(() => {
+    if (!id) return;
+    dispatch(fetchProfileData(id));
+  });
 
   const onChangeFirstname = useCallback(
     (value?: string) => {

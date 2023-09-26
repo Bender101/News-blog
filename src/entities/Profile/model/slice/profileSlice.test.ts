@@ -4,7 +4,9 @@ import {
 import { Country } from 'entities/Country';
 import { Currency } from 'entities/Currency';
 
-const data = {
+const data =
+    {
+    id: '1',
     username: 'admin',
     age: 22,
     country: Country.Ukraine,
@@ -72,7 +74,7 @@ describe('profileSlice.test', () => {
 
         expect(profileReducer(
             state as ProfileSchema,
-            updateProfileData.fulfilled(data, ''),
+            updateProfileData.fulfilled(data, '',),
         )).toEqual({
             isLoading: false,
             validateErrors: undefined,
