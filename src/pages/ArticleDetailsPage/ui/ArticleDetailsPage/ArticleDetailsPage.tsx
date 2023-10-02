@@ -23,7 +23,7 @@ import { AddCommentForm } from "features/addCommentForm";
 import { Button, ButtonTheme } from "shared/ui/Button/Button";
 import { RoutePath } from "shared/config/routeConfig/routeConfig";
 import { addCommentForArticle } from "../../model/services/addCommentForArticle/addCommentForArticle";
-import { Page } from "shared/ui/Page/Page";
+import { Page } from "widgets/Page/Page";
 
 interface ArticleDetailsPageProps {
   className?: string;
