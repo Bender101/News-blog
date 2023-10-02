@@ -8,7 +8,6 @@ import ArticleIcon from "shared/assets/icons/article-20-20.svg";
 import { SidebarItemType } from "../types/sidebar";
 
 export const getSideBarItems = createSelector(getUserAuthData, (userData) => {
-  console.log(userData)
   const sidebarItemsList: SidebarItemType[] = [
     {
       path: RoutePath.main,
