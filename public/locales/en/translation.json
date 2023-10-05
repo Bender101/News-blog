@@ -13,9 +13,22 @@
   "auth_form": "Auth Form",
   "profile_page": "Profile",
   "articles_page": "Articles",
+  "articles_not_found": "Articles not found",
   "comments": "Comments",
   "no_comments": "No comments",
   "enter_text": "Enter text",
   "send": "Send",
-  "read_more": "Read more..."
+  "read_more": "Read more...",
+  "sort_by": "Sort by",
+  "search": "Search",
+  "by": "by",
+  "asc": "asc",
+  "desc": "desc",
+  "by_created_date": "by created date",
+  "naming": "naming",
+  "viewed": "viewed",
+  "all_articles": "All articles",
+  "it": "IT",
+  "economic": "Economic",
+  "science": "Science"
 }
