@@ -1,74 +1,36 @@
-name: linting, testing, building
+name: Linter, Tests, Build
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on:
   push:
-    branches: [ master ]
+    branches: [master]
+
   pull_request:
-    branches: [ master ]
+    branches: [master]
 jobs:
-  pipeline:
+  Build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [ 17.x ]
+        node-version: [17.x]
 
     steps:
-      - uses: actions/checkout@v2
-      - name: Staring Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@v3
+      - name: Staring Node.js ${{matrix.node-version}}
+        uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
-      - name: install modules
+          node-version: ${{matrix.node-version}}
+
+      - name: Install modules
         run: npm install
-      - name: build production project
+      - name: Prod build
         run: npm run build:prod
-        if: always()
-      - name: linting typescript
+      - name: lint ts
         run: npm run lint:ts
         if: always()
-      - name: linting css
+      - name: lint css
         run: npm run lint:scss
-      - name: unit testing
         if: always()
+      - name: Unit testing
         run: npm run test:unit
-      - name: build storybook
-        run: npm run storybook:build
         if: always()
 
-
-
-#name: Linter, Tests, Build
-#run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-#on:
-#  push:
-#    branches: [master]
-#
-#  pull_request:
-#    branches: [master]
-#jobs:
-#  Build:
-#    runs-on: ubuntu-latest
-#    strategy:
-#      matrix:
-#        node-version: [17.x]
-#
-#    steps:
-#      - uses: actions/checkout@v3
-#      - name: Staring Node.js ${{matrix.node-version}}
-#        uses: actions/setup-node@v3
-#        with:
-#          node-version: ${{matrix.node-version}}
-#
-#      - name: Install modules
-#        run: npm install
-#      - name: Prod build
-#        run: npm run build:prod
-#      - name: lint ts
-#        run: npm run lint:ts
-#        if: always()
-#      - name: lint css
-#        run: npm run lint:scss
-#        if: always()
-#      - name: Unit testing
-#        run: npm run test:unit
-#        if: always()
-#
