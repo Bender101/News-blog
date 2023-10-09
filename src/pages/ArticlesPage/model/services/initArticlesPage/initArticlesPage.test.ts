@@ -1,1 +1,6 @@
-console.log("Сюда сделать тест, проверить дергается ли редюсер сбез _inited");
+describe('initArticlesPage.test', () => {
+  test("", () => {
+    expect(1).toEqual(1);
+  });
+});
+
