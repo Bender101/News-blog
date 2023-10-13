@@ -5,7 +5,7 @@ import {
   Article,
   ArticleBlockType,
   ArticleType,
-} from "entities/Article/model/types/article";
+} from "../../model/types/article";
 import { User } from "entities/User";
 
 const meta: Meta<typeof ArticleDetails> = {

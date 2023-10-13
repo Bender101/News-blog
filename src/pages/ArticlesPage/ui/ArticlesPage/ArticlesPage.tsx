@@ -20,7 +20,7 @@ import { useInitialEffect } from "shared/lib/hooks/useInitialEffect/useInitialEf
 import { Page } from "widgets/Page/Page";
 import { fetchNextArticlesPage } from "../../model/services/fetchNextArticlesPage/fetchNextArticlesPage";
 import { initArticlesPage } from "../../model/services/initArticlesPage/initArticlesPage";
-import { ArticlesPageFilters } from "pages/ArticlesPage/ui/ArticlesPageFilters/ArticlesPageFilters";
+import { ArticlesPageFilters } from "../../ui/ArticlesPageFilters/ArticlesPageFilters";
 import { useSearchParams } from "react-router-dom";
 
 interface ArticlesPageProps {

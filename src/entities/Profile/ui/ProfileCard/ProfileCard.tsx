@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { Text, TextAlign, TextTheme } from "shared/ui/Text/Text";
 import { Input } from "shared/ui/Input/Input";
 import cls from "./ProfileCard.module.scss";
-import { Profile } from "entities/Profile/model/types/profile";
+import { Profile } from "../../model/types/profile";
 import { Loader } from "shared/ui/Loader/Loader";
 import {Currency, CurrencySelect} from "entities/Currency";
 import {Country, CountrySelect } from "entities/Country";

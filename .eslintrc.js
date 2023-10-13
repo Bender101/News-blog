@@ -16,7 +16,7 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  plugins: ["react", "@typescript-eslint", "react-hooks"],
+  plugins: ["react", "@typescript-eslint", "react-hooks", "fsd-rules-checker-latest"],
   rules: {
     "react/jsx-filename-extension": [
       2,
@@ -40,6 +40,7 @@ module.exports = {
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "error",
     "no-param-reassign": "off",
+    "fsd-rules-checker-latest/path-checker": "error"
   },
   globals: {
     __IS_DEV__: true,

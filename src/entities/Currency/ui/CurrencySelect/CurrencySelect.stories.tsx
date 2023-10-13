@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { CurrencySelect } from "entities/Currency/ui/CurrencySelect/CurrencySelect";
+import { CurrencySelect } from "../../ui/CurrencySelect/CurrencySelect";
 
 const meta: Meta<typeof CurrencySelect> = {
   title: "shared/CurrencySelect",

@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { SideBar } from "widgets/SideBar";
+import { SideBar } from "../SideBar/SideBar";
 import { ThemeDecorator } from "shared/config/storybook/ThemeDecorator/ThemeDecorator";
 import { Theme } from "app/providers/ThemeProvider";
 import { StoreDecorator } from "shared/config/storybook/StoreDecorator/StoreDecorator";
