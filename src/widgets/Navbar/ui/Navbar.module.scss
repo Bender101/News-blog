@@ -1,15 +1,14 @@
 .navbar {
-  display: flex;
   width: 100%;
   height: var(--navbar-height);
+  background: var(--inverted-bg-color);
+  display: flex;
   align-items: center;
   padding: 20px;
-  background: var(--inverted-bg-color);
 }
 
-.links {
-  display: flex;
-  column-gap: 15px;
+.links,
+.dropdown {
   margin-left: auto;
 }
 
