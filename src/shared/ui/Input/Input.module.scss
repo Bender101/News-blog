@@ -1,4 +1,9 @@
-input {
+.inputWrapper {
+  display: flex;
+  width: 100%;
+}
+
+.input {
   padding: 2px 4px;
   width: 100%;
 }

@@ -31,12 +31,13 @@ export const Input = memo(
     };
 
     return (
-      <div className={classNames(cls.input, mods, [className])}>
+      <div className={classNames(cls.inputWrapper, mods, [className])}>
         <input
           type={type}
           value={value}
           onChange={changeHandler}
           readOnly={readonly}
+          className={cls.input}
           {...otherProps}
         ></input>
       </div>
