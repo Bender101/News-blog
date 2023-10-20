@@ -72,6 +72,7 @@
     "husky": "^8.0.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.5.1",
+    "jest-html-reporters": "^3.1.4",
     "json-server": "^0.17.3",
     "mini-css-extract-plugin": "^2.5.3",
     "prettier": "^2.8.8",
