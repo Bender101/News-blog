@@ -34,5 +34,6 @@
   "recommended": "Recommended",
   "news_blog": "News blog",
   "create_article": "Create article",
-  "profile": "Profile"
+  "profile": "Profile",
+  "error_load_articles": "An error occurred while uploading articles"
 }

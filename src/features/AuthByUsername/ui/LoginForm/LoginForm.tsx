@@ -14,7 +14,7 @@ import cls from "./LoginForm.module.scss";
 import {
   DynamicModuleLoader,
   ReducersList,
-} from "shared/lib/components/DynamicModuleLoader";
+} from "shared/lib/components/DynamicModuleLoader/DynamicModuleLoader";
 import { loginByUsername } from "../../model/services/loginByUsername";
 import { useAppDispatch } from "shared/lib/hooks/useAppDispatch/useAppDispatch";
 

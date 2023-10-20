@@ -1,21 +1,13 @@
 import { classNames } from "shared/lib/classNames/classNames";
 import { memo, useCallback } from "react";
 import cls from "./ArticlesPage.module.scss";
-import { ArticleList } from "entities/Article";
+import { ArticleInfiniteList } from "../ArticleInfiniteList/ArticleInfiniteList";
 import {
   DynamicModuleLoader,
   ReducersList,
-} from "shared/lib/components/DynamicModuleLoader";
-import {
-  articlesPageReducer,
-  getArticles,
-} from "../../model/slices/articlesPageSlice";
+} from "shared/lib/components/DynamicModuleLoader/DynamicModuleLoader";
+import { articlesPageReducer } from "../../model/slices/articlesPageSlice";
 import { useAppDispatch } from "shared/lib/hooks/useAppDispatch/useAppDispatch";
-import { useSelector } from "react-redux";
-import {
-  getArticlesPageIsLoading,
-  getArticlesPageView,
-} from "../../model/selectors/articlesPageSelectors";
 import { useInitialEffect } from "shared/lib/hooks/useInitialEffect/useInitialEffect";
 import { Page } from "widgets/Page/Page";
 import { fetchNextArticlesPage } from "../../model/services/fetchNextArticlesPage/fetchNextArticlesPage";
@@ -35,9 +27,6 @@ const ArticlesPage = (props: ArticlesPageProps) => {
   const { className } = props;
 
   const dispatch = useAppDispatch();
-  const articles = useSelector(getArticles.selectAll);
-  const isLoading = useSelector(getArticlesPageIsLoading);
-  const view = useSelector(getArticlesPageView);
   const [searchParams] = useSearchParams();
 
   const onLoadNextPart = useCallback(() => {
@@ -55,12 +44,7 @@ const ArticlesPage = (props: ArticlesPageProps) => {
         className={classNames(cls.ArticlesPage, {}, [className])}
       >
         <ArticlesPageFilters />
-        <ArticleList
-          className={cls.list}
-          isLoading={isLoading}
-          view={view}
-          articles={articles}
-        />
+        <ArticleInfiniteList className={cls.list} />
       </Page>
     </DynamicModuleLoader>
   );
