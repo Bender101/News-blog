@@ -94,12 +94,14 @@ export const ProfileCard = ({
         placeholder={t("first_name")}
         readonly={readonly}
         onChange={onChangeFirstname}
+        data-testid="ProfileCard.firstname"
       />
       <Input
         value={data?.lastname}
         placeholder={t("last_name")}
         readonly={readonly}
         onChange={onChangeLastname}
+        data-testid="ProfileCard.lastname"
       />
       <Input
         value={data?.age}
