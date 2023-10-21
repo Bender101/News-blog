@@ -26,9 +26,9 @@
     "baseUrl": ".",
     "paths": {
       "*": ["./src/*"]
-    }
+    },
+    "isolatedModules": true
   },
-
   "ts-node": {
     "compilerOptions": {
       "module": "CommonJS"

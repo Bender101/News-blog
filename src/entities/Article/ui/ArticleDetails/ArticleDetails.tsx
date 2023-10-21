@@ -17,7 +17,7 @@ import {
   getArticleDetailsError,
   getArticleDetailsIsLoading,
 } from "../../model/selectors/articleDetails";
-import { ArticleBlock, ArticleBlockType } from "../../model/types/article";
+import { ArticleBlock } from "../../model/types/article";
 import {
   DynamicModuleLoader,
   ReducersList,
@@ -26,6 +26,7 @@ import { ArticleCodeBlockComponent } from "../ArticleCodeBlockComponent/ArticleC
 import { ArticleTextBlockComponent } from "../ArticleTextBlockComponent/ArticleTextBlockComponent";
 import { ArticleImageBlockComponent } from "../ArticleImageBlockComponent/ArticleImageBlockComponent";
 import { HStack, VStack } from "shared/ui/Stack";
+import { ArticleBlockType } from "../../model/consts/consts";
 
 interface ArticleDetailsProps {
   className?: string;
