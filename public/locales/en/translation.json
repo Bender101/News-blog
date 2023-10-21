@@ -3,6 +3,7 @@
   "test_case": "Test case",
   "main": "Main",
   "about": "About",
+  "admin": "Admin page",
   "lang": "English",
   "not_found": "Page not found",
   "sign_in": "Sign In",
@@ -35,5 +36,6 @@
   "news_blog": "News blog",
   "create_article": "Create article",
   "profile": "Profile",
-  "error_load_articles": "An error occurred while uploading articles"
+  "error_load_articles": "An error occurred while uploading articles",
+  "you_cannot_access_this_page": "You cannot access this page"
 }
