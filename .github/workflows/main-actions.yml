@@ -21,7 +21,7 @@ jobs:
           node-version: ${{matrix.node-version}}
 
       - name: Install modules
-        run: npm install --force #удалить форс после миграции на 18реакт и рефакторинга
+        run: npm install --force #TODO удалить форс после миграции на 18реакт и рефакторинга
       - name: Prod build
         run: npm run build:prod
       - name: lint ts
