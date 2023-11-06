@@ -1,7 +1,7 @@
 import { Meta, StoryObj } from "@storybook/react";
 
 import { EditableProfileCard } from "./EditableProfileCard";
-import { StoreDecorator } from "shared/config/storybook/StoreDecorator/StoreDecorator";
+import { StoreDecorator } from "@/shared/config/storybook/StoreDecorator/StoreDecorator";
 
 const meta: Meta<typeof EditableProfileCard> = {
   title: "features/editableProfileCard/EditableProfileCard",

@@ -9,7 +9,7 @@
     {
       "id": "2",
       "title": "Уведомление 2",
-      "description": "Произошло какое-то событие",
+      "description": "Произошло какое-то событие 2",
       "userId": "1",
       "href": "http://localhost:3000/admin"
     },

@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from "@storybook/react";
 import ArticleDetailsPage from "./ArticleDetailsPage";
-import { StoreDecorator } from "shared/config/storybook/StoreDecorator/StoreDecorator";
+import { StoreDecorator } from "@/shared/config/storybook/StoreDecorator/StoreDecorator";
 
 const meta: Meta<typeof ArticleDetailsPage> = {
   title: "pages/ArticleDetailsPage",
