@@ -37,5 +37,8 @@
   "create_article": "Create article",
   "profile": "Profile",
   "error_load_articles": "An error occurred while uploading articles",
-  "you_cannot_access_this_page": "You cannot access this page"
+  "you_cannot_access_this_page": "You cannot access this page",
+  "your_feedback": "Your feedback",
+  "send_btn": "Send",
+  "close_btn": "Close"
 }

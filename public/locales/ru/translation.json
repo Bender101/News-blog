@@ -37,5 +37,8 @@
   "create_article": "Создать статью",
   "profile": "Профиль",
   "error_load_articles": "При загрузке статей произошла ошибка",
-  "you_cannot_access_this_page": "У вас нет доступа к этой странице"
+  "you_cannot_access_this_page": "У вас нет доступа к этой странице",
+  "your_feedback": "Ваш отзыв",
+  "send_btn": "Отправить",
+  "close_btn": "Закрыть"
 }
