@@ -748,5 +748,27 @@
       "username": "user",
       "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg"
     }
+  ],
+  "article-ratings": [
+    {
+      "id": "1",
+      "rate": 4,
+      "feedback": "Хорошая статья",
+      "userId": "1",
+      "articleId": "1"
+    },
+    {
+      "userId": "1",
+      "articleId": "12",
+      "rate": 4,
+      "id": "NyAYB7F"
+    },
+    {
+      "userId": "1",
+      "articleId": "18",
+      "rate": 4,
+      "feedback": "yuoiuoio",
+      "id": "_7nsSBL"
+    }
   ]
 }
