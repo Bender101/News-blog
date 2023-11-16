@@ -9,7 +9,7 @@ export default ({ config }: { config: webpack.Configuration }) => {
     html: "",
     entry: "",
     src: path.resolve(__dirname, "..", "..", "src"),
-    locales: path.resolve(__dirname, "public", 'locales'),
+    locales: path.resolve(__dirname, "public", "locales"),
     buildLocales: path.resolve(__dirname, "build", "locales"),
   };
   config!.resolve!.modules!.push(paths.src);
@@ -35,7 +35,10 @@ export default ({ config }: { config: webpack.Configuration }) => {
       __PROJECT__: JSON.stringify("storybook"),
     })
   );
-  config.resolve!.alias = { '@': paths.src }
+  config.resolve!.alias = {
+    ...config.resolve!.alias,
+    "@": paths.src,
+  };
 
   return config;
 };
