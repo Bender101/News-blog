@@ -4,7 +4,7 @@ import {
   AppRoutesProps,
   routeConfig,
 } from "@/shared/config/routeConfig/routeConfig";
-import { PageLoader } from "@/widgets/PageLoader/ui/PageLoader";
+import { PageLoader } from "@/widgets/PageLoader";
 import { RequireAuth } from "./RequireAuth";
 
 const AppRouter = () => {
