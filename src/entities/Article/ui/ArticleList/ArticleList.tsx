@@ -4,7 +4,7 @@ import { ArticleListItemSkeleton } from "../../ui/ArticleListItem/ArticleListIte
 import { ArticleListItem } from "../ArticleListItem/ArticleListItem";
 import cls from "./ArticleList.module.scss";
 import { Article } from "../../model/types/article";
-import { TextSize, Text } from "@/shared/ui/Text/Text";
+import { TextSize, Text } from "@/shared/ui/Text";
 import { useTranslation } from "react-i18next";
 import { ArticleView } from "../../model/consts/consts";
 

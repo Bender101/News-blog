@@ -3,7 +3,7 @@ import { useState, useMemo, memo } from "react";
 import { classNames } from "@/shared/lib/classNames/classNames";
 import { ThemeSwitcher } from "@/features/ThemeSwitcher";
 import { LangSwitcher } from "@/features/LangSwitcher";
-import { Button, ButtonSize, ButtonTheme } from "@/shared/ui/Button/Button";
+import { Button, ButtonSize, ButtonTheme } from "@/shared/ui/Button";
 import { SidebarItem } from "../SidebarItem/SidebarItem";
 import { useSelector } from "react-redux";
 import { getSideBarItems } from "../../model/selectors/getSideBarItems";
