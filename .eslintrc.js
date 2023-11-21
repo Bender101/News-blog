@@ -21,6 +21,7 @@ module.exports = {
     "@typescript-eslint",
     "react-hooks",
     "fsd-rules-checker-latest",
+    "unused-imports",
   ],
   rules: {
     "react/jsx-filename-extension": [
@@ -45,6 +46,7 @@ module.exports = {
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "error",
     "no-param-reassign": "off",
+    "unused-imports/no-unused-imports": "error",
     "fsd-rules-checker-latest/path-checker": ["error", { alias: "@" }],
     "fsd-rules-checker-latest/public-api-imports": [
       "error",
@@ -61,7 +63,7 @@ module.exports = {
       "error",
       {
         alias: "@",
-        ignoreImportPatterns: ["**/StoreProvider", '**/testing'],
+        ignoreImportPatterns: ["**/StoreProvider", "**/testing"],
       },
     ],
   },
