@@ -7,7 +7,7 @@ import { useSelector } from "react-redux";
 import { getArticleDetailsData } from "@/entities/Article";
 import { getCanEditArticle } from "../../model/selectors/article";
 import { HStack } from "@/shared/ui/Stack";
-import {RoutePath} from "@/shared/const/router";
+import { getRouteArticleEdit, getRouteArticles } from "@/shared/const/router";
 
 interface ArticleDetailsPageHeaderProps {
   className?: string;
@@ -23,11 +23,11 @@ export const ArticleDetailsPageHeader = memo(
     const article = useSelector(getArticleDetailsData);
 
     const onBackToList = useCallback(() => {
-      navigate(RoutePath.articles);
+      navigate(getRouteArticles());
     }, [navigate]);
 
     const onEditArticle = useCallback(() => {
-      navigate(`${RoutePath.article_details}${article?.id}/edit`);
+      navigate(getRouteArticleEdit(article?.id ?? ''));
     }, [article?.id, navigate]);
 
     return (
@@ -36,10 +36,7 @@ export const ArticleDetailsPageHeader = memo(
           {t("back_to_list")}
         </Button>
         {canEdit && (
-          <Button
-            theme={ButtonTheme.OUTLINE}
-            onClick={onEditArticle}
-          >
+          <Button theme={ButtonTheme.OUTLINE} onClick={onEditArticle}>
             {t("edit")}
           </Button>
         )}
