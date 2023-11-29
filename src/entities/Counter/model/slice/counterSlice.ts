@@ -9,6 +9,7 @@ const initialState: CounterSchema = {
 export const counterSlice = buildSlice({
   name: "counter",
   initialState,
+
   reducers: {
     add: (state, { payload }: PayloadAction<number>) => {
       state.value += payload;
@@ -27,4 +28,3 @@ export const {
   reducer: counterReducer,
   useActions: useCounterActions,
 } = counterSlice;
-
