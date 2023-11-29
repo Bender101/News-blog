@@ -1,36 +1,114 @@
-name: Linter, Tests, Build
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+#name: Linter, Tests, Build
+#run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+#on:
+#  push:
+#    branches: [master]
+#
+#  pull_request:
+#    branches: [master]
+#jobs:
+#  Build:
+#    runs-on: ubuntu-latest
+#    strategy:
+#      matrix:
+#        node-version: [17.x]
+#
+#    steps:
+#      - uses: actions/checkout@v3
+#      - name: Staring Node.js ${{matrix.node-version}}
+#        uses: actions/setup-node@v3
+#        with:
+#          node-version: ${{matrix.node-version}}
+#
+#      - name: Install modules
+#        run: npm install --force #TODO удалить форс после миграции на 18реакт и рефакторинга
+#      - name: Prod build
+#        run: npm run build:prod
+#      - name: lint ts
+#        run: npm run lint:ts
+#        if: always()
+#      - name: lint css
+#        run: npm run lint:scss
+#        if: always()
+#      - name: Unit testing
+#        run: npm run test:unit
+#        if: always()
+#
+
+name: linting, testing, building
 on:
   push:
-    branches: [master]
-
+    branches: [ master ]
   pull_request:
-    branches: [master]
+    branches: [ master ]
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
 jobs:
-  Build:
+  build-and-ui-testing:
+    runs-on: ubuntu-latest
+    concurrency: ci-${{ github.ref }}
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    strategy:
+      matrix:
+        node-version: [ 17.x ]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Staring Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: install modules
+        run: npm ci --force
+      - name: build production project
+        run: npm run build:prod
+        if: always()
+      - name: build storybook
+        run: npm run storybook:build
+        if: always()
+#      - name: screenshot testing
+#        run: npm run test:ui:ci
+#        if: always()
+#      - name: Generate HTML report
+#        run: npm run test:ui:report
+#        if: always()
+      - name: Setup Pages
+        uses: actions/configure-pages@v2
+        if: always()
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        if: always()
+        with:
+          path: '.loki'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        if: always()
+        uses: actions/deploy-pages@v1
+
+  checks:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [17.x]
-
+        node-version: [ 17.x ]
     steps:
-      - uses: actions/checkout@v3
-      - name: Staring Node.js ${{matrix.node-version}}
-        uses: actions/setup-node@v3
+      - uses: actions/checkout@v2
+      - name: Staring Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
         with:
-          node-version: ${{matrix.node-version}}
-
-      - name: Install modules
-        run: npm install --force #TODO удалить форс после миграции на 18реакт и рефакторинга
-      - name: Prod build
-        run: npm run build:prod
-      - name: lint ts
+          node-version: ${{ matrix.node-version }}
+      - name: install modules
+        run: npm ci --force
+      - name: linting typescript
         run: npm run lint:ts
         if: always()
-      - name: lint css
+      - name: linting css
         run: npm run lint:scss
+      - name: unit testing
         if: always()
-      - name: Unit testing
         run: npm run test:unit
-        if: always()
-
