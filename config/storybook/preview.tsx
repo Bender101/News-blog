@@ -20,12 +20,13 @@ const preview: Preview = {
         date: /Date$/,
       },
     },
+
     themes: {
-      default: 'light',
+      default: "light",
       list: [
-        { name: 'Light', class: Theme.LIGHT, color: '#ebebec' },
-        { name: 'Dark', class: Theme.DARK, color: '#000611' },
-        { name: 'Orange', class: Theme.ORANGE, color: '#ea930f' }
+        { name: "Light", class: Theme.LIGHT, color: "#ebebec" },
+        { name: "Dark", class: Theme.DARK, color: "#000611" },
+        { name: "Orange", class: Theme.ORANGE, color: "#ea930f" },
       ],
     },
   },
