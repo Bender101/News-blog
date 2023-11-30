@@ -72,9 +72,9 @@ jobs:
       - name: build storybook
         run: npm run storybook:build
         if: always()
-      #      - name: screenshot testing
-      #        run: npm run test:ui:ci
-      #        if: always()
+      - name: screenshot testing
+        run: npm run test:ui:ci
+        if: always()
       - name: unit testing
         if: always()
         run: npm run test:unit
@@ -91,7 +91,7 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         if: always()
         with:
-          path: "reports"
+          path: 'reports'
       - name: Deploy to GitHub Pages
         id: deployment
         if: always()
