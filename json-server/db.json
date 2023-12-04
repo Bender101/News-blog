@@ -789,6 +789,12 @@
       "rate": 5,
       "feedback": "fgggtg",
       "id": "PNNS8-b"
+    },
+    {
+      "userId": "1",
+      "articleId": "6",
+      "rate": 2,
+      "id": "I8_f9kQ"
     }
   ]
 }
