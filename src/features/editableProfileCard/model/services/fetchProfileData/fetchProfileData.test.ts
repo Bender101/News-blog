@@ -25,7 +25,7 @@ describe("fetchProfileData.test", () => {
     expect(result.payload).toEqual(data);
   });
 
-  test("error login", async () => {
+  test("error common", async () => {
     const thunk = new TestAsyncThunk(fetchProfileData);
     thunk.api.get.mockReturnValue(Promise.resolve({ status: 403 }));
     const result = await thunk.callThunk("1");
