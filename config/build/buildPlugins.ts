@@ -3,7 +3,7 @@ import webpack from "webpack";
 import { BuildOptions } from "./types/config";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
 import ReactRefreshWebpackPlugin from "@pmmmwh/react-refresh-webpack-plugin";
-import { BundleAnalyzerPlugin } from "webpack-bundle-analyzer";
+// import { BundleAnalyzerPlugin } from "webpack-bundle-analyzer";
 import CopyPlugin from "copy-webpack-plugin";
 import CircularDependencyPlugin from "circular-dependency-plugin";
 import ForkTsCheckerWebpackPlugin from "fork-ts-checker-webpack-plugin";
@@ -38,7 +38,7 @@ export function buildPlugins({
 
   if (isDev) {
     plugins.push(new ReactRefreshWebpackPlugin());
-    plugins.push(new BundleAnalyzerPlugin({ openAnalyzer: false }));
+    // plugins.push(new BundleAnalyzerPlugin({ openAnalyzer: false }));
     plugins.push(
       new CircularDependencyPlugin({
         exclude: /node_modules/,
