@@ -15,7 +15,8 @@ import { VStack } from "@/shared/ui/Stack";
 import { ArticleRecommendationsList } from "@/features/articleRecommendationsList";
 import { ArticleDetailsComments } from "../../ui/ArticleDetailsComments/ArticleDetailsComments";
 import { ArticleRating } from "@/features/articleRating";
-import { getFeatureFlag } from "@/shared/lib/features";
+import { ToggleFeatures } from "@/shared/lib/features";
+import { Card } from "@/shared/ui/Card";
 
 interface ArticleDetailsPageProps {
   className?: string;
@@ -29,7 +30,6 @@ const ArticleDetailsPage = (props: ArticleDetailsPageProps) => {
   const { className } = props;
   const { id } = useParams();
   const { t } = useTranslation("article-details");
-  const isArticleRatingEnabled = getFeatureFlag("isArticleRatingEnabled");
 
   if (!id) {
     return (
@@ -45,7 +45,11 @@ const ArticleDetailsPage = (props: ArticleDetailsPageProps) => {
         <VStack gap="16" max>
           <ArticleDetailsPageHeader />
           <ArticleDetails id={id} />
-          {isArticleRatingEnabled && <ArticleRating articleId={id} />}
+          <ToggleFeatures
+            feature="isArticleRatingEnabled"
+            on={<ArticleRating articleId={id} />}
+            off={<Card>{t("Оценка статей скоро появится!")}</Card>}
+          />
           <ArticleRecommendationsList />
           <ArticleDetailsComments id={id} />
         </VStack>
