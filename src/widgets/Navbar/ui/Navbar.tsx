@@ -44,7 +44,7 @@ export const Navbar = memo(({ className }: NavbarProps) => {
                 </header>
             }
             off={
-                <header className={classNames(cls.Navbar, {}, [className])}>
+                <header className={classNames(cls.navbar, {}, [className])}>
                     <Text
                         className={cls.appName}
                         title={t("news_blog")}

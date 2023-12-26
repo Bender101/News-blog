@@ -49,7 +49,7 @@ export const SideBar = memo(({ className }: SideBarProps) => {
       off={
         <aside
           data-testid="sidebar"
-          className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [
+          className={classNames(cls.sidebar, { [cls.collapsed]: collapsed }, [
             className,
           ])}
         >

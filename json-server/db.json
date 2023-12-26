@@ -724,12 +724,12 @@
       "features": {
         "isArticleRatingEnabled": false,
         "isCounterEnabled": false,
-        "isAppRedesigned": true
+        "isAppRedesigned": false
       },
       "jsonSettings": {
-        "theme": "app_orange_theme",
+        "theme": "app_light_theme",
         "isFirstVisit": true,
-        "isArticlesPageWasOpened": false
+        "isArticlesPageWasOpened": true
       },
       "roles": [
         "USER"
