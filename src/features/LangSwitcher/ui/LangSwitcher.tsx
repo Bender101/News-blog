@@ -10,9 +10,10 @@ enum Locale {
 
 interface LangSwitcherProps {
   className?: string;
+  short?: boolean;
 }
 
-export const LangSwitcher = memo(({ className }: LangSwitcherProps) => {
+export const LangSwitcher = memo(({ className, short }: LangSwitcherProps) => {
   const { t, i18n } = useTranslation();
   const changeLang = () =>
     i18n.changeLanguage(i18n.language === Locale.RU ? Locale.EN : Locale.RU);
@@ -23,7 +24,8 @@ export const LangSwitcher = memo(({ className }: LangSwitcherProps) => {
       theme={ButtonTheme.CLEAR}
       onClick={changeLang}
     >
-      {t("lang")}
+      {/* TODO переводы*/}
+      {t(short ? "Короткий язык" : "Язык")}
     </Button>
   );
 });

@@ -707,7 +707,8 @@
       ],
       "features": {
         "isArticleRatingEnabled": true,
-        "isCounterEnabled": true
+        "isCounterEnabled": true,
+        "isAppRedesigned": true
       },
       "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg",
       "jsonSettings": {
@@ -722,7 +723,8 @@
       "password": "123",
       "features": {
         "isArticleRatingEnabled": false,
-        "isCounterEnabled": false
+        "isCounterEnabled": false,
+        "isAppRedesigned": true
       },
       "jsonSettings": {
         "theme": "app_orange_theme",
@@ -742,6 +744,11 @@
         "MANAGER"
       ],
       "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg",
+      "features": {
+        "isArticleRatingEnabled": false,
+        "isCounterEnabled": false,
+        "isAppRedesigned": true
+      },
       "jsonSettings": {
         "theme": "app_orange_theme",
         "isFirstVisit": true,
