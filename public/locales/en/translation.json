@@ -5,6 +5,7 @@
   "about": "About",
   "admin": "Admin page",
   "lang": "English",
+  "short_lang": "En",
   "not_found": "Page not found",
   "sign_in": "Sign In",
   "logout": "Logout",
@@ -41,5 +42,9 @@
   "your_feedback": "Your feedback",
   "send_btn": "Send",
   "close_btn": "Close",
-  "thanks": "Thanks for the assessment!"
+  "thanks": "Thanks for the assessment!",
+  "country": "Country",
+  "currency": "Currency",
+  "admin_panel": "Admin",
+  "logout": "Logout"
 }

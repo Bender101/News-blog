@@ -18,9 +18,11 @@
   height: 300px;
   border-radius: 50%;
   opacity: 0.6;
+  pointer-events: none;
 }
 
 .gradientSmall {
+  pointer-events: none;
   position: absolute;
   width: 200px;
   height: 200px;

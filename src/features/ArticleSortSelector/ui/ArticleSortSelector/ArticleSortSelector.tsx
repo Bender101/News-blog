@@ -22,11 +22,11 @@ export const ArticleSortSelector = memo((props: ArticleSortSelectorProps) => {
     () => [
       {
         value: "asc",
-        content: t("возрастанию"),
+        content: t("asc"),
       },
       {
         value: "desc",
-        content: t("убыванию"),
+        content: t("desc"),
       },
     ],
     [t]
@@ -36,15 +36,15 @@ export const ArticleSortSelector = memo((props: ArticleSortSelectorProps) => {
     () => [
       {
         value: ArticleSortField.CREATED,
-        content: t("дате создания"),
+        content: t("by_created_date"),
       },
       {
         value: ArticleSortField.TITLE,
-        content: t("названию"),
+        content: t("naming"),
       },
       {
         value: ArticleSortField.VIEWS,
-        content: t("просмотрам"),
+        content: t("viewed"),
       },
     ],
     [t]
@@ -54,13 +54,13 @@ export const ArticleSortSelector = memo((props: ArticleSortSelectorProps) => {
     <div className={classNames(cls.ArticleSortSelector, {}, [className])}>
       <Select<ArticleSortField>
         options={sortFieldOptions}
-        label={t("Сортировать ПО")}
+        label={t("sort_by")}
         value={sort}
         onChange={onChangeSort}
       />
       <Select
         options={orderOptions}
-        label={t("по")}
+        label={t("by")}
         value={order}
         onChange={onChangeOrder}
         className={cls.order}
