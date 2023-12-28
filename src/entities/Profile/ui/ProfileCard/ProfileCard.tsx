@@ -8,7 +8,7 @@ import { Loader } from "@/shared/ui/deprecated/Loader";
 import { Currency, CurrencySelect } from "@/entities/Currency";
 import { Country, CountrySelect } from "@/entities/Country";
 import { Avatar } from "@/shared/ui/deprecated/Avatar";
-import { HStack, VStack } from "@/shared/ui/deprecated/Stack";
+import { HStack, VStack } from "@/shared/ui/redesigned/Stack";
 
 interface ProfileCardProps {
   className?: string;

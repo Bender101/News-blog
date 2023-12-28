@@ -7,7 +7,7 @@ import { Button, ButtonSize, ButtonTheme } from "@/shared/ui/deprecated/Button";
 import { SidebarItem } from "../SidebarItem/SidebarItem";
 import { useSelector } from "react-redux";
 import { getSideBarItems } from "../../model/selectors/getSideBarItems";
-import { VStack } from "@/shared/ui/deprecated/Stack";
+import { VStack } from "@/shared/ui/redesigned/Stack";
 import { ToggleFeatures } from "@/shared/lib/features";
 import { AppLogo } from "@/shared/ui/redesigned/AppLogo";
 import { Icon } from "@/shared/ui/redesigned/Icon";
@@ -45,7 +45,7 @@ export const SideBar = memo(({ className }: SideBarProps) => {
             [className]
           )}
         >
-          <AppLogo className={cls.appLogo} size={collapsed ? 30 : 50} />
+          <AppLogo className={cls.appLogo} size={collapsed ? 30 : 70} />
           <VStack role="navigation" gap="8" className={cls.items}>
             {itemsList}
           </VStack>
