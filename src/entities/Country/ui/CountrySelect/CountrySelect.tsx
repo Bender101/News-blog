@@ -1,43 +1,53 @@
-import { useTranslation } from "react-i18next";
-import { memo, useCallback } from "react";
-import { Country } from "../../model/types/country";
-import { ListBox } from "@/shared/ui/deprecated/Popups";
+import { useTranslation } from 'react-i18next';
+import { memo, useCallback } from 'react';
+import { ListBox as ListBoxDeprecated } from '@/shared/ui/deprecated/Popups';
+import { ListBox } from '@/shared/ui/redesigned/Popups';
+import { Country } from '../../model/types/country';
+import { ToggleFeatures } from '@/shared/lib/features';
 
 interface CountrySelectProps {
-  className?: string;
-  value?: Country;
-  onChange?: (value: Country) => void;
-  readonly?: boolean;
+    className?: string;
+    value?: Country;
+    onChange?: (value: Country) => void;
+    readonly?: boolean;
 }
 
 const options = [
-  { value: Country.Armenia, content: Country.Armenia },
-  { value: Country.Russia, content: Country.Russia },
-  { value: Country.Belarus, content: Country.Belarus },
-  { value: Country.Kazakhstan, content: Country.Kazakhstan },
-  { value: Country.Ukraine, content: Country.Ukraine },
+    { value: Country.Armenia, content: Country.Armenia },
+    { value: Country.Russia, content: Country.Russia },
+    { value: Country.Belarus, content: Country.Belarus },
+    { value: Country.Kazakhstan, content: Country.Kazakhstan },
+    { value: Country.Ukraine, content: Country.Ukraine },
 ];
 
 export const CountrySelect = memo(
-  ({ value, onChange, readonly }: CountrySelectProps) => {
-    const { t } = useTranslation();
+    ({ className, value, onChange, readonly }: CountrySelectProps) => {
+        const { t } = useTranslation();
 
-    const onChangeHandler = useCallback(
-      (value: string) => {
-        onChange?.(value as Country);
-      },
-      [onChange]
-    );
+        const onChangeHandler = useCallback(
+            (value: string) => {
+                onChange?.(value as Country);
+            },
+            [onChange],
+        );
 
-    return (
-      <ListBox
-        onChange={onChangeHandler}
-        value={value}
-        label={t("country")}
-        items={options}
-        readonly={readonly}
-        direction="top right"
-      />
-    );
-  }
+        const props = {
+            className,
+            value,
+            defaultValue: t("country"),
+            label: t("country"),
+            items: options,
+            onChange: onChangeHandler,
+            readonly,
+            direction: 'top right' as const,
+        };
+
+        return (
+            <ToggleFeatures
+                feature="isAppRedesigned"
+                on={<ListBox {...props} />}
+                off={<ListBoxDeprecated {...props} />}
+            />
+        );
+    },
 );
