@@ -36,6 +36,16 @@
   outline: none;
 }
 
+.outline {
+  background: none;
+  border: 1px solid var(--icon-redesigned);
+  border-radius: 34px;
+
+  &:hover {
+    border: 1px solid var(--accent-redesigned);
+  }
+}
+
 .filled {
   background: var(--light-bg-redesigned);
   border: none;
