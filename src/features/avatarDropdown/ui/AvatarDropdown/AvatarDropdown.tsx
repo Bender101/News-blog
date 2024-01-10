@@ -13,7 +13,7 @@ import {
 import { ToggleFeatures } from '@/shared/lib/features';
 import { Dropdown } from '@/shared/ui/redesigned/Popups';
 import { Avatar } from '@/shared/ui/redesigned/Avatar';
-import { getRouteAdmin, getRouteProfile } from "@/shared/const/router";
+import { getRouteAdmin, getRouteProfile, getRouteSettings } from "@/shared/const/router";
 
 
 interface AvatarDropdownProps {
@@ -47,6 +47,10 @@ export const AvatarDropdown = memo((props: AvatarDropdownProps) => {
                 },
             ]
             : []),
+        {
+            content: t('settings'),
+            href: getRouteSettings(),
+        },
         {
             content: t('profile'),
             href: getRouteProfile(authData.id),

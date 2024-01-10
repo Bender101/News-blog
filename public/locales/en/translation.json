@@ -46,5 +46,6 @@
   "country": "Country",
   "currency": "Currency",
   "admin_panel": "Admin",
-  "logout": "Logout"
+  "logout": "Logout",
+  "settings": "Settings"
 }

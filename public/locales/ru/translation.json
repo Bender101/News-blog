@@ -46,5 +46,6 @@
   "country": "Страна",
   "currency": "Валюта",
   "admin_panel": "Админка",
-  "logout": "Выйти"
+  "logout": "Выйти",
+  "settings": "Настройки"
 }
