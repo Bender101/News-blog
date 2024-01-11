@@ -4,5 +4,9 @@
   "edit": "Редактировать",
   "article_rate": "Оцените статью",
   "leave_your_feedback": "Оставьте свой отзыв о статье, это поможет улучшить качество",
-  "article_evaluations_coming_soon": "Оценка статей скоро появится!"
+  "article_evaluations_coming_soon": "Оценка статей скоро появится!",
+  "views_count_zero": "{{count}} просмотров",
+  "views_count_one": "{{count}} просмотр",
+  "views_count_few": "{{count}} просмотра",
+  "views_count_many": "{{count}} просмотров"
 }

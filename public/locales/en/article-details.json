@@ -4,5 +4,8 @@
   "edit": "Edit",
   "article_rate": "Article rate",
   "leave_your_feedback": "Leave your feedback on the article, it will help improve the quality of the article",
-  "article_evaluations_coming_soon": "Article evaluations coming soon!"
+  "article_evaluations_coming_soon": "Article evaluations coming soon!",
+  "views_count_zero": "{{count}} views",
+  "views_count_one": "{{count}} view",
+  "views_count_other": "{{count}} views"
 }

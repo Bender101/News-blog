@@ -25,12 +25,12 @@ import { ArticleCodeBlockComponent } from "../ArticleCodeBlockComponent/ArticleC
 import { ArticleTextBlockComponent } from "../ArticleTextBlockComponent/ArticleTextBlockComponent";
 import { ArticleImageBlockComponent } from "../ArticleImageBlockComponent/ArticleImageBlockComponent";
 import { HStack, VStack } from "@/shared/ui/redesigned/Stack";
-import { articleDetailsReducer } from '../../model/slice/articleDetailsSlice';
-import { ArticleBlockType } from '../../model/consts/consts';
+import { articleDetailsReducer } from "../../model/slice/articleDetailsSlice";
+import { ArticleBlockType } from "../../model/consts/consts";
 
 interface ArticleDetailsProps {
   className?: string;
-  id: string;
+  id?: string;
 }
 
 const reducers: ReducersList = {
@@ -78,7 +78,7 @@ export const ArticleDetails = memo((props: ArticleDetailsProps) => {
 
   useEffect(() => {
     if (__PROJECT__ !== "storybook") {
-      dispatch(fetchArticleById(id));
+      dispatch(fetchArticleById(id || ""));
     }
   }, [dispatch, id]);
 
