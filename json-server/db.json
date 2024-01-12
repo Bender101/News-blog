@@ -695,6 +695,30 @@
       "userId": "1",
       "text": "sdgf",
       "id": "sH-zuaE"
+    },
+    {
+      "articleId": "7",
+      "userId": "1",
+      "text": "sadasd",
+      "id": "th5tSVn"
+    },
+    {
+      "articleId": "7",
+      "userId": "1",
+      "text": "assa",
+      "id": "F8V7uaP"
+    },
+    {
+      "articleId": "7",
+      "userId": "1",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium atque beatae debitis esse odio, quibusdam veritatis. Accusantium assumenda enim expedita nostrum possimus quas ratione tempore voluptatibus. Explicabo nam quisquam recusandae sequi? Consequatur dignissimos ducimus ea, magni placeat quidem quos similique? Autem cumque eos maiores nam natus sequi suscipit ullam unde? Architecto eius exercitationem numquam qui quisquam rem sequi unde vero. Ad animi asperiores consequatur cumque cupiditate, dolores dolorum ducimus ex explicabo fugiat illo impedit libero magni maxime molestias nam natus nobis nostrum nulla odio officiis perferendis repellat repudiandae sapiente temporibus vel voluptatem? Dolorem dolores facilis libero molestiae nihil pariatur quos.",
+      "id": "OYD_Lye"
+    },
+    {
+      "articleId": "7",
+      "userId": "1",
+      "text": "sss",
+      "id": "YIjywga"
     }
   ],
   "users": [
@@ -712,7 +736,7 @@
       },
       "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg",
       "jsonSettings": {
-        "theme": "app_dark_theme",
+        "theme": "app_orange_theme",
         "isFirstVisit": true,
         "isArticlesPageWasOpened": true
       }
@@ -831,6 +855,13 @@
       "articleId": "6",
       "rate": 2,
       "id": "I8_f9kQ"
+    },
+    {
+      "userId": "1",
+      "articleId": "2",
+      "rate": 4,
+      "feedback": "asdfdsfds",
+      "id": "LGlKc2U"
     }
   ]
 }

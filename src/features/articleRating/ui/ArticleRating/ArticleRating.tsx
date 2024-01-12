@@ -64,7 +64,6 @@ const ArticleRating = memo((props: ArticleRatingProps) => {
 
   return (
     <RatingCard
-      max
       onCancel={onCancel}
       onAccept={onAccept}
       rate={rating?.rate}
