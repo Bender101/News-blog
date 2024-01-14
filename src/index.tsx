@@ -5,8 +5,8 @@ import { StoreProvider } from "@/app/providers/StoreProvider";
 import "@/app/styles/index.scss";
 import "./shared/config/i18n/i18n";
 import { ErrorBoundary } from "@/app/providers/ErrorBounadary";
-import { App } from "@/app/App";
 import { ForceUpdateProvider } from "@/shared/lib/render/forceUpdate";
+import App from "./app/App";
 const container = document.getElementById("root");
 
 if (!container) {
