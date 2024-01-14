@@ -38,7 +38,7 @@ export const Navbar = memo(({ className }: NavbarProps) => {
     const mainClass = toggleFeatures({
         name: 'isAppRedesigned',
         on: () => cls.NavbarRedesigned,
-        off: () => cls.Navbar,
+        off: () => cls.navbar,
     });
 
     if (authData) {
