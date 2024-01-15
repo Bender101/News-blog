@@ -4,6 +4,7 @@ import { RouterDecorator } from "../../src/shared/config/storybook/RouterDecorat
 import { SuspenseDecorator } from "../../src/shared/config/storybook/SuspenseDecorator/SuspenseDecorator";
 import { Preview } from "@storybook/react";
 import { Theme } from "../../src/shared/const/theme";
+import {FeaturesFlagsDecorator} from "../../src/shared/config/storybook/FeaturesFlagsDecorator/FeaturesFlagsDecorator";
 
 const preview: Preview = {
   decorators: [
@@ -11,6 +12,7 @@ const preview: Preview = {
     ThemeDecorator(Theme.LIGHT),
     RouterDecorator,
     SuspenseDecorator,
+    FeaturesFlagsDecorator({}),
   ],
   parameters: {
     actions: { argTypesRegex: "^on[A-Z].*" },

@@ -13,6 +13,9 @@ const config: StorybookConfig = {
     "storybook-addon-mock",
     "storybook-addon-themes",
   ],
+  // features: {
+  //   storyStoreV7: false, // 👈 Opt out of on-demand story loading
+  // },
   framework: {
     name: "@storybook/react-webpack5",
     options: {},
