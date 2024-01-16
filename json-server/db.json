@@ -719,6 +719,12 @@
       "userId": "1",
       "text": "sss",
       "id": "YIjywga"
+    },
+    {
+      "articleId": "3",
+      "userId": "1",
+      "text": "sdfsdffds",
+      "id": "oiKSMac"
     }
   ],
   "users": [
@@ -862,6 +868,13 @@
       "rate": 4,
       "feedback": "asdfdsfds",
       "id": "LGlKc2U"
+    },
+    {
+      "userId": "1",
+      "articleId": "3",
+      "rate": 4,
+      "feedback": "asaff",
+      "id": "8d_uUBp"
     }
   ]
 }
