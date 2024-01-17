@@ -64,7 +64,7 @@ export const StarRating = memo((props: StarRatingProps) => {
                 [
                   currentStarsCount >= starNumber
                       ? cls.hovered
-                      : cls.normal,
+                      : cls.deprecated_normal,
                 ],
             ),
             Svg: StarIcon,
